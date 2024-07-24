@@ -20,7 +20,7 @@ const HeroSection = () => {
                         className={`mb-7 text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#e54971] to-[#e2a812] ${spaceMono.className}`}>&gt;
                         <TypeAnimation
                             className='ml-6 '
-                            sequence={["whoissaadia", 1000, "pwd", 1000, "ls", 1000]}
+                            sequence={["whoissaadia", 1000, "pwd", 1000, "ls", 1000, "echo \"hey\"", 1000]}
                             wrapper='span'
                             speed={20}
                             repeat={Infinity} />

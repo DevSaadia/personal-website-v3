@@ -17,10 +17,10 @@ const NavBar = () => {
     }]
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-white bg-opacity-100'>
-      <div className='flex justify-center md:justify-between items-center mx-auto py-2 px-4 md:px-24 border border-black'>
+      <div className='flex justify-center md:justify-between items-center mx-auto py-2 px-4 md:px-24'>
         <Link href='#hero-section'
-          className='text-2xl whitespace-nowrap text-[#e54971] font-semibold border border-black'>Saadia Shahid</Link>
-        <div className='menu hidden md:block md:w-auto border border-black'>
+          className='text-2xl whitespace-nowrap text-[#e54971] font-semibold'>Saadia Shahid</Link>
+        <div className='menu hidden md:block md:w-auto'>
 
           {/* <ul>
             {navLinks.map((link, index) => (
