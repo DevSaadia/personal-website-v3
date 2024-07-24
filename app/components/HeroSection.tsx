@@ -68,9 +68,9 @@ const HeroSection = () => {
 
                     </div>
                 </div>
-                <div id='hero-image' className='flex-1 flex justify-center md:justify-end rounded-2xl w-[250px] h-[250px]'>
+                <div id='hero-image' className='md:flex-1 flex justify-center md:justify-end rounded-2xl w-[400px] h-[400px] md:w-[250px] md:h-[250px]'>
                     <Image
-                        className='object-cover rounded-2xl '
+                        className='object-cover object-top rounded-2xl shadow-md w-full h-full'
                         src="/images/me.jpg"
                         width={400}
                         height={400}
