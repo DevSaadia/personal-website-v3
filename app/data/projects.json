@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Wordle-Like",
+        "image":"images/wordle-like.png",
+        "github":"https://github.com/DevSaadia/wordle-like",
+        "url":"https://wordle-like-ochre.vercel.app/"
+       
+    },
+    {
+        "id": 2,
+        "title": "My Weather",
+        "image":"images/my-weather.png",
+       
+        "github": "https://github.com/DevSaadia/my-weather",
+        "url":"https://my-weather-ochre.vercel.app/"
+    
+
+    }]
+
