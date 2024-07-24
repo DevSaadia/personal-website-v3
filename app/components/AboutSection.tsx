@@ -27,6 +27,7 @@ const AboutSection = () => {
         <ul className='grid grid-cols-2 md:grid-cols-5 gap-2'>
           {skills.map((skill, index) => (
             <li key={index} className={`text-white ${averageSans.className} text-base`}>
+              <span className='text-[#ffd3a0]'>▹      </span>
               {skill.skill}
             </li>
           ))}

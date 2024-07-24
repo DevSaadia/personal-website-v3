@@ -4,11 +4,12 @@ import { CodeBracketIcon, EyeIcon } from '@heroicons/react/20/solid'
 
 interface ProjectCardProps {
     title: string,
+    description: string,
     image: string,
     github: string,
     url: string,
 }
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, image, github, url }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, github, url }) => {
     return (
         <div>
             <div
@@ -34,9 +35,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, image, github, url }) 
                     </Link>
                 </div>
             </div>
-            <div className="text-white rounded-b-xl mt-1 bg-[#e54971] py-6 px-4 mb-4">
+            <div className="text-white rounded-b-xl mt-1 bg-[#e54971] py-6 px-4 mb-4 w-96 h-36">
                 <h5 className="text-xl font-semibold mb-2">{title}</h5>
-                {/* <p className="text-[#f8e8be]">{description}</p> */}
+                <p className="text-[#f8e8be]">{description}</p>
             </div>
         </div>
     )

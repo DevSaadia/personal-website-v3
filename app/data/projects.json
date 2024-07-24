@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "Wordle-Like",
+        "description": "A Wordle-like game where you have to guess a 5 letter word in 6 attempts.",
         "image":"images/wordle-like.png",
         "github":"https://github.com/DevSaadia/wordle-like",
         "url":"https://wordle-like-ochre.vercel.app/"
@@ -11,7 +12,7 @@
         "id": 2,
         "title": "My Weather",
         "image":"images/my-weather.png",
-       
+        "description": "A weather app that shows the current weather, highlights and forecast for the next few hours.",
         "github": "https://github.com/DevSaadia/my-weather",
         "url":"https://my-weather-ochre.vercel.app/"
     
