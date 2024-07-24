@@ -11,7 +11,7 @@ const AboutSection = () => {
     '>
       <div className='flex  gap-8 p-8 md:p-40 flex-col'>
         <h1
-          className={`mb-7 text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#ffffff] to-[#e2a812] ${spaceMono.className}`}>&gt;
+          className={`mb-7 text-3xl md:text-5xl font-extrabold text-transparent md:w-1/4 w-1/2 bg-clip-text  bg-gradient-to-r from-[#ffffff] to-[#e2a812] ${spaceMono.className}`}>&gt;
           about
         </h1>
         <div id="about-body" className='flex flex-col gap-4 md:w-4/5'>

@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, gi
                 style={{
                     background: `url(${image})`,
                     backgroundSize: "contain",
-                    // backgroundPosition: "center",
+                    backgroundPosition: "center",
                 }}
             >
                 <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 group-hover: rounded-t-xl transition-all duration-500">

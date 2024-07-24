@@ -17,7 +17,7 @@ const HeroSection = () => {
             <div className='flex flex-col-reverse  md:flex-row items-center justify-center md:justify-between gap-8  md:gap-24 lg:gap-96 p-8 md:p-40 w-full'>
                 <div id='hero-content' className='md:flex-1 '>
                     <h1
-                        className={`mb-7 md:pt-2 text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#e54971] to-[#e2a812] ${spaceMono.className}`}>&gt;
+                        className={`mb-7 md:pt-2 text-3xl md:text-5xl font-extrabold text-transparent md:w-11/12 w-2/3 bg-clip-text   bg-gradient-to-r from-[#e54971] to-[#e2a812] ${spaceMono.className}`}>&gt;
                         <TypeAnimation
                             className='ml-6 '
                             sequence={["whoissaadia", 1000, "pwd", 1000, "ls", 1000, "echo \"hey\"", 1000]}
@@ -60,7 +60,7 @@ const HeroSection = () => {
                            ring-4
                            ring-[#e54971]
                               mt-3'
-                            onClick={() => window.open("/files/Saadia_Shahid_resume.pdf", "_blank")}
+                            onClick={() => window.open("/files/Saadia_Shahid_Resume.pdf", "_blank")}
                         >
                             Download CV
                         </button>

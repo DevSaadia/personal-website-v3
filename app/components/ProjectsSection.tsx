@@ -11,9 +11,10 @@ const ProjectsSection = () => {
       <div className='flex gap-8 p-8 md:p-40 flex-col'>
         <h1
           className={`mb-7 text-3xl md:text-5xl font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-[#e54971] to-[#e2a812] ${spaceMono.className}`}>&gt; projects </h1>
-        <div id='projects-group' className='flex  flex-col flex-wrap justify-center md:flex-row gap-4'>
+        <div id='projects-group' className='flex  flex-col  justify-center  md:flex-row gap-4'>
           {projects.map((project: any, index: React.Key | null | undefined) => (
-            <ProjectCard key={index} title={project.title} description={project.description} image={project.image} github={project.github} url={project.url} />
+            <ProjectCard
+              key={index} title={project.title} description={project.description} image={project.image} github={project.github} url={project.url} />
           ))}
         </div>
       </div>
