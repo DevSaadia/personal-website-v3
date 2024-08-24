@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 // styles/fonts.js
+import { ChakraProvider } from "@chakra-ui/react";
 
 import "./globals.css";
 import NavBar from "./components/NavBar";
@@ -23,7 +24,14 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body className={`${inter.className} ${spaceMono.variable} ${averageSans.variable}`}><NavBar />{children}<Footer/></body>
+      <body className={`${inter.className} ${spaceMono.variable} ${averageSans.variable}`}>
+        <ChakraProvider>
+          <NavBar />
+          {children}
+          <Footer />
+        </ChakraProvider>
+      </body>
+
     </html>
   );
 }

@@ -1,28 +1,41 @@
-[
+[  
     {
         "id": 1,
+        "title": "Saadia's Games [in progress]",
+        "image":"images/saadias-games.png",
+        "description": "A gaming site to play Hangman, Tic Tac Toe, and Wordle stylized in Squid Game theme.",
+        "github": "https://github.com/DevSaadia/saadias-games",
+        "url":"https://saadias-games.vercel.app/",
+        "technologies": ["React", "NextJS", "TypeScript", "Tailwind CSS", "Chakra UI", "Git"]
+    },
+      {
+    "id": 1,
+    "title": "Hangman Game",
+    "image":"images/hangman-ts.png",
+    "description": "A hangman game built in NextJS where you have 7 tries to guess the word.",
+    "github": "https://github.com/DevSaadia/hangman-nextjs",
+    "url":"https://hangman-nextjs-iota.vercel.app/",
+    "technologies": ["React", "NextJS", "TypeScript", "Tailwind CSS", "Git"]
+},
+    {
+        "id": 2,
         "title": "Wordle-Like",
         "description": "A Wordle-like game where you have to guess a 5-letter word in 6 attempts.",
         "image":"images/wordle-like.png",
         "github":"https://github.com/DevSaadia/wordle-like",
-        "url":"https://wordle-like-ochre.vercel.app/"
+        "url":"https://wordle-like-ochre.vercel.app/",
+        "technologies": ["React", "NextJS", "TypeScript", "Tailwind CSS", "Git"]
        
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "My Weather",
         "image":"images/my-weather.png",
         "description": "A weather app showing current weather, highlights, and hourly forecast.",
         "github": "https://github.com/DevSaadia/my-weather",
-        "url":"https://my-weather-ochre.vercel.app/"
-    },
-    {
-        "id": 3,
-        "title": "Hangman Game",
-        "image":"images/hangman-ts.png",
-        "description": "A hangman game built in NextJS where you have 7 tries to guess the word.",
-        "github": "https://github.com/DevSaadia/hangman-nextjs",
-        "url":"https://github.com/DevSaadia/hangman-nextjs"
+        "url":"https://my-weather-ochre.vercel.app/",
+        "technologies": ["React", "Tailwind CSS","OpenWeather API","Git"]
     }
+
 ]
 
