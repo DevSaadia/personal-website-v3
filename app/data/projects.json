@@ -34,7 +34,7 @@
         "description": "A weather app showing current weather, highlights, and hourly forecast.",
         "github": "https://github.com/DevSaadia/my-weather",
         "url":"https://my-weather-ochre.vercel.app/",
-        "technologies": ["React", "Tailwind CSS","OpenWeather API","Git"]
+        "technologies": ["React","JavaScript" ,"Tailwind CSS","OpenWeather API","Git"]
     }
 
 ]
