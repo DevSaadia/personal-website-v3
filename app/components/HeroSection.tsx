@@ -3,6 +3,7 @@ import React from 'react'
 import { TypeAnimation } from "react-type-animation";
 import { spaceMono, averageSans } from '../styles/fonts';
 import Image from 'next/image';
+import { Button } from '@nextui-org/button';
 
 const HeroSection = () => {
     return (
@@ -25,15 +26,26 @@ const HeroSection = () => {
                         className={`mb-7 md:pt-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold whitespace-nowrap text-transparent w-full bg-clip-text   bg-gradient-to-r from-[#e54971] to-[#e2a812] ${spaceMono.className} border border-black`}>&gt;
                         <TypeAnimation
                             className='ml-6 '
-                            // sequence={["pwd"]}
                             sequence={["whoissaadia", 1000, "pwd", 1000, "ls", 1000, "echo \"hey\"", 1000]}
                             wrapper='span'
                             speed={20}
                             repeat={Infinity} />
                     </h1>
                     <p className={`w-full xl:w-2/3 2xl:w-5/6 ${averageSans.className} text-xl lg:text-2xl mb-6 border border-black`}>Driven by creativity, innovation and a desire to foster community among the minority groups in the tech industry.</p>
-                    <div id='buttons-container' className='flex flex-col md:flex-row gap-4'>
-                        <button
+                    <div id='buttons-container' className='flex flex-col md:flex-row  gap-4'>
+                        <Button
+                            radius='full' size='lg' className='text-white bg-[#e54971] '
+                            onClick={() => window.open("mailto:saadia.shahid@torontomu.ca?subject=Hello Saadia&body=Hi...", "_blank")}
+                        >
+                            Say Hello
+                        </Button>
+                        <Button
+                            radius='full' variant='bordered' size='lg' className='text-[#e54971] border-4 border-[#e54971] hover:bg-white '
+                            onClick={() => window.open("/files/Saadia_Shahid_Resume.pdf", "_blank")}
+                        >
+                            View Resume
+                        </Button>
+                        {/* <button
                             className='
                                 px-6
                                 py-2
@@ -69,7 +81,7 @@ const HeroSection = () => {
                             onClick={() => window.open("/files/Saadia_Shahid_Resume.pdf", "_blank")}
                         >
                             Download CV
-                        </button>
+                        </button> */}
 
 
                     </div>

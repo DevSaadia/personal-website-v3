@@ -7,6 +7,7 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 import { averageSans, spaceMono } from "./styles/fonts";
 import Footer from "./components/Footer";
+import { NextUIProvider } from "@nextui-org/system";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,11 +26,13 @@ export default function RootLayout({
     <html lang="en">
 
       <body className={`${inter.className} ${spaceMono.variable} ${averageSans.variable}`}>
-        <ChakraProvider>
-          <NavBar />
-          {children}
-          <Footer />
-        </ChakraProvider>
+        <NextUIProvider>
+          <ChakraProvider>
+            <NavBar />
+            {children}
+            <Footer />
+          </ChakraProvider>
+        </NextUIProvider>
       </body>
 
     </html>
