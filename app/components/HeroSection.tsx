@@ -24,7 +24,7 @@ const HeroSection = () => {
                     <p className='hidden xl:block 2xl:hidden'>xl</p>
                     <p className='hidden 2xl:block'>2xl</p> */}
                     <h1
-                        className={`mb-7 md:pt-2 text-3xl  md:text-4xl lg:text-5xl xl:text-6xl font-extrabold whitespace-nowrap text-transparent w-full bg-clip-text   bg-gradient-to-r from-[#e54971] to-[#e2a812] ${spaceMono.className} `}>&gt;
+                        className={`mb-7 md:pt-2 text-3xl  md:text-4xl lg:text-5xl xl:text-6xl font-extrabold whitespace-nowrap text-transparent w-auto inline-block  bg-clip-text   bg-gradient-to-r from-[#e54971] to-[#e2a812] ${spaceMono.className} `}>&gt;
                         <TypeAnimation
                             className='ml-6 '
                             sequence={["whoissaadia", 1000, "pwd", 1000, "ls", 1000, "echo \"hey\"", 1000]}

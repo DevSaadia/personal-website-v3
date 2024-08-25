@@ -2,28 +2,24 @@ import Link from 'next/link'
 import path from 'path'
 import React from 'react'
 import NavLink from './NavLink'
-import { JetBrains_Mono } from '@next/font/google'
-const jetBrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-})
+import { jetBrainsMono, spaceMono } from '../styles/fonts'
 const NavBar = () => {
   const navLinks = [
     {
-      title: "Home",
+      title: "home",
       path: "#hero-section",
     }, {
-      title: "About",
+      title: "about",
       path: "#about-section",
     }, {
-      title: "Projects",
+      title: "projects",
       path: "#projects-section",
     }]
   return (
     <nav className='fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-100'>
-      <div className={` ${jetBrainsMono.className} flex justify-center md:justify-between items-center mx-8 md:mx-24 2xl:mx-56 py-6`}>
+      <div className={` ${spaceMono.className} flex justify-center md:justify-between items-center mx-8 md:mx-24 2xl:mx-56 py-6`}>
         <Link href='#hero-section'
-          className='text-3xl whitespace-nowrap text-[#e54971] '>Saadia Shahid</Link>
+          className='text-4xl whitespace-nowrap text-[#e54971] font-bold '>saadia shahid</Link>
         <div className='menu hidden md:block md:w-auto'>
 
           {/* <ul>
@@ -33,7 +29,7 @@ const NavBar = () => {
               </li>
             ))}
           </ul> */}
-          <ul className="flex text-xl p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+          <ul className="flex text-xl p-4 md:p-0 md:flex-row md:space-x-8 mt-0 font-semibold">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title}></NavLink>
