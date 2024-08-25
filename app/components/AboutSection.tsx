@@ -44,12 +44,11 @@ const AboutSection = () => {
                 className={`text-white ${averageSans.className} text-base flex-nowrap  relative`}>
                 <span className='text-[#ffd3a0] absolute left-0'>▹</span>
                 <span className='ml-6'>{skill.skill}</span>
-
               </li>
             ))}
           </ul>
           <p className={`text-white ${averageSans.className} text-lg md:text-xl`}>
-            I have multifaceted interests and have background in marketing, graphic design, photography, and biology. I love working with community and school groups in organizing workshops, hackathons, and networking events to make technology more accessible to the masses.
+            I have multifaceted interests and have background in marketing, graphic design, photography, and biology. I love working with community and school groups (Lunar Hub, Women in Computer Science, Practical Applications in Computer Science, TerraHacks, etc) in organizing workshops, hackathons, and networking events in making technology more accessible to the masses.
           </p>
           <p className={`text-white ${averageSans.className} text-lg md:text-xl`}>
             I am also a{" "}
