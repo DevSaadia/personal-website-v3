@@ -20,7 +20,7 @@ interface NextUICardProps {
 const NextUICard: React.FC<NextUICardProps> = ({ title, description, image, github, url, technologies }) => {
     return (
         <>
-            <Card className={`py-4 size-[330px] mb-4 mx-4 ${averageSans.className}`}>
+            <Card className={`py-4 size-[330px] mb-6 mx-4 ${averageSans.className}`}>
                 <CardBody className="overflow-visible py-2 flex items-center">
                     <Image
                         alt="Card background"

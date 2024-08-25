@@ -9,12 +9,12 @@ const AboutSection = () => {
       className='
     bg-[#e85f82] min-h-screen  flex items-center 
     '>
-      <div className='flex  gap-8 m-8 md:m-24 2xl:m-56 flex-col border border-black'>
+      <div className='flex  gap-8 m-8 md:m-24 2xl:m-56 flex-col'>
         <h1
           className={`mb-7 text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-transparent md:w-1/4 w-1/2 bg-clip-text  bg-gradient-to-r from-[#ffffff] to-[#e2a812] ${spaceMono.className}`}>&gt;
           about
         </h1>
-        <div id="about-body" className='flex flex-col gap-4 w-full border border-black'>
+        <div id="about-body" className='flex flex-col gap-4 w-full'>
           <p className={`text-white ${averageSans.className} text-lg md:text-xl `}>
             Hello World!
           </p>
