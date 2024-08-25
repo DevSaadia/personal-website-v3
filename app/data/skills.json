@@ -1,12 +1,17 @@
 [
+    {"skill": "HTML & CSS"},
     {"skill": "Python"},
     {"skill": "Java"},
-    {"skill": "HTML & CSS"},
-    {"skill": "C"},
-    {"skill": "C++"},
+    {"skill": "C / C++"},
     {"skill": "C#"},
     {"skill": "JavaScript"},
-    {"skill": "Next.js"},
+    {"skill": "TypeScript"},
+    {"skill": "React"},
+    {"skill": "NextJS"},
+    {"skill": "Tailwind CSS"},
+    {"skill": "MongoDB"},
+    {"skill": "SQL"},
+    {"skill": "Ruby"},
     {"skill": "VSCode"},
     {"skill": "GitHub"}
 ]

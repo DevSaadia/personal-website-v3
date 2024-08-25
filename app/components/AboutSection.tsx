@@ -22,14 +22,14 @@ const AboutSection = () => {
           <p className={`text-white ${averageSans.className} text-lg md:text-xl`}>
 
 
-            My name is Saadia and I am a 4th year computer science student @
+            My name is Saadia and I am a 4th year computer science student @{" "}
             <Link
               href='https://www.torontomu.ca/'
               className='text-[#ffe196] hover:underline'
               target="_blank"
               rel="noopener noreferrer"
             >
-              <strong> Toronto Metropolitan University</strong>
+              <strong>Toronto Metropolitan University</strong>
             </Link>
             . I am an aspiring fullstack software developer, and am interested in learning more about Cloud Computation, Machine Learning, and Natural Language Processing. <br />
             Lately, I have been working with JavaScript frameworks and technologies such as NextJS, React, Tailwind CSS, and TypeScript.
@@ -39,9 +39,12 @@ const AboutSection = () => {
           </p>
           <ul className='grid grid-cols-2 md:grid-cols-5 gap-2 flex-nowrap'>
             {skills.map((skill, index) => (
-              <li key={index} className={`text-white ${averageSans.className} text-base flex-nowrap`}>
-                <span className='text-[#ffd3a0]'>▹</span>
-                {skill.skill}
+              <li
+                key={index}
+                className={`text-white ${averageSans.className} text-base flex-nowrap  relative`}>
+                <span className='text-[#ffd3a0] absolute left-0'>▹</span>
+                <span className='ml-6'>{skill.skill}</span>
+
               </li>
             ))}
           </ul>
@@ -49,16 +52,16 @@ const AboutSection = () => {
             I have multifaceted interests and have background in marketing, graphic design, photography, and biology. I love working with community and school groups in organizing workshops, hackathons, and networking events to make technology more accessible to the masses.
           </p>
           <p className={`text-white ${averageSans.className} text-lg md:text-xl`}>
-            I am also a
+            I am also a{" "}
             <Link
               href='https://www.saadiashahid.ca/'
               className='text-[#ffe196] hover:underline'
               target="_blank"
               rel="noopener noreferrer"
             >
-              <strong> freelance photographer </strong>
+              <strong>freelance photographer</strong>
             </Link >
-            and enjoy shooting weddings and portraits. In my spare time, you can find me learning a new hobby or digital painting.</p>
+            {" "}and enjoy shooting weddings and portraits. In my spare time, you can find me learning a new hobby or digital painting.</p>
         </div>
       </div >
     </section >
