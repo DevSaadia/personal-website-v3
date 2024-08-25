@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "Saadia's Games [dev]",
+        "date": "July 2024 - Present",
         "image":"images/saadias-games.png",
         "description": "A gaming site to play Hangman, Tic Tac Toe, and Wordle stylized in Squid Game theme.",
         "github": "https://github.com/DevSaadia/saadias-games",
@@ -11,6 +12,7 @@
       {
     "id": 1,
     "title": "Hangman Game",
+    "date": "July 2024",
     "image":"images/hangman-ts.png",
     "description": "A hangman game built in NextJS where you have 7 tries to guess the word.",
     "github": "https://github.com/DevSaadia/hangman-nextjs",
@@ -20,6 +22,7 @@
     {
         "id": 2,
         "title": "Wordle-Like",
+        "date": "July 2024",
         "description": "A Wordle-like game where you have to guess a 5-letter word in 6 attempts.",
         "image":"images/wordle-like.png",
         "github":"https://github.com/DevSaadia/wordle-like",
@@ -30,6 +33,7 @@
     {
         "id": 3,
         "title": "My Weather",
+        "date": "February 2024 - March 2024",
         "image":"images/my-weather.png",
         "description": "A weather app showing current weather, highlights, and hourly forecast.",
         "github": "https://github.com/DevSaadia/my-weather",

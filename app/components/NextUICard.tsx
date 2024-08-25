@@ -11,13 +11,14 @@ import { spaceMono, averageSans, jetBrainsMono } from '../styles/fonts'
 
 interface NextUICardProps {
     title: string,
+    date: string,
     description: string,
     image: string,
     github: string,
     url: string,
     technologies: string[]
 }
-const NextUICard: React.FC<NextUICardProps> = ({ title, description, image, github, url, technologies }) => {
+const NextUICard: React.FC<NextUICardProps> = ({ title, date, description, image, github, url, technologies }) => {
     return (
         <>
             <Card className={`py-4 size-[330px] mb-6 mx-4 ${averageSans.className}`}>
@@ -32,7 +33,7 @@ const NextUICard: React.FC<NextUICardProps> = ({ title, description, image, gith
                 </CardBody>
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                     <h4 className={`font-bold text-lg mb-2 ${jetBrainsMono.className}`}>{title}</h4>
-                    {/* <p className="text-tiny uppercase font-bold">Daily Mix</p> */}
+                    <p className="text-tiny uppercase font-bold">{date}</p>
                     <p className="text-default-500 w-full">{description}</p>
                     <div className='flex flex-row flex-wrap gap-2 pb-4 mt-2'>
                         {technologies.map((technology, index) => (
