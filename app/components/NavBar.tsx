@@ -20,7 +20,7 @@ const NavBar = () => {
       path: "#projects-section",
     }]
   return (
-    <nav className='fixed top-0 left-0 right-0 z-10 bg-white bg-opacity-100'>
+    <nav className='fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-100'>
       <div className={` ${jetBrainsMono.className} flex justify-center md:justify-between items-center mx-8 md:mx-24 2xl:mx-56 py-6`}>
         <Link href='#hero-section'
           className='text-3xl whitespace-nowrap text-[#e54971] '>Saadia Shahid</Link>

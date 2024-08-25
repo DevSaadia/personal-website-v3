@@ -5,6 +5,8 @@ import { Image } from "@nextui-org/image";
 import { Chip } from "@nextui-org/chip";
 import { Divider } from '@chakra-ui/react';
 import { Button } from "@nextui-org/button";
+import { spaceMono, averageSans, jetBrainsMono } from '../styles/fonts'
+
 
 
 interface NextUICardProps {
@@ -18,7 +20,7 @@ interface NextUICardProps {
 const NextUICard: React.FC<NextUICardProps> = ({ title, description, image, github, url, technologies }) => {
     return (
         <>
-            <Card className="py-4 size-[330px] mb-4 mx-4 ">
+            <Card className={`py-4 size-[330px] mb-4 mx-4 ${averageSans.className}`}>
                 <CardBody className="overflow-visible py-2 flex items-center">
                     <Image
                         alt="Card background"
@@ -29,9 +31,9 @@ const NextUICard: React.FC<NextUICardProps> = ({ title, description, image, gith
                     />
                 </CardBody>
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-                    <h4 className="font-bold text-lg mb-2">{title}</h4>
+                    <h4 className={`font-bold text-lg mb-2 ${jetBrainsMono.className}`}>{title}</h4>
                     {/* <p className="text-tiny uppercase font-bold">Daily Mix</p> */}
-                    <p className="text-default-500 text-sm w-full">{description}</p>
+                    <p className="text-default-500 w-full">{description}</p>
                     <div className='flex flex-row flex-wrap gap-2 pb-4 mt-2'>
                         {technologies.map((technology, index) => (
                             <Chip

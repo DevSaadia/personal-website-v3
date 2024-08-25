@@ -32,7 +32,8 @@ const HeroSection = () => {
                             speed={20}
                             repeat={Infinity} />
                     </h1>
-                    <p className={`w-full text-black xl:w-2/3 2xl:w-5/6 ${averageSans.className} text-xl lg:text-2xl 2xl:text-[32px] mb-6 `}>Driven by creativity, innovation and a desire to foster community among the minority groups in the tech industry.</p>
+                    <p className={`w-full text-black xl:w-2/3 2xl:w-5/6 ${averageSans.className} text-xl lg:text-2xl 2xl:text-[32px] mb-6 `}>
+                        Driven by creativity, innovation and a desire to foster community among the minority groups in the tech industry.</p>
                     <div id='buttons-container' className='flex flex-col md:flex-row  gap-4'>
                         <Button
                             radius='full' size='lg' className='text-white bg-[#e54971] '

@@ -1,7 +1,7 @@
 [  
     {
         "id": 1,
-        "title": "Saadia's Games [in progress]",
+        "title": "Saadia's Games [dev]",
         "image":"images/saadias-games.png",
         "description": "A gaming site to play Hangman, Tic Tac Toe, and Wordle stylized in Squid Game theme.",
         "github": "https://github.com/DevSaadia/saadias-games",
