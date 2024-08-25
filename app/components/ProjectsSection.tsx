@@ -20,7 +20,7 @@ const ProjectsSection = () => {
 
           {/* nextui card here */}
           {projects.map((project: any, index: React.Key | null | undefined) => (
-            console.log(project),
+
             <NextUICard
               key={index} title={project.title} date={project.date} description={project.description} image={project.image} github={project.github} url={project.url} technologies={project.technologies} />
           ))}
