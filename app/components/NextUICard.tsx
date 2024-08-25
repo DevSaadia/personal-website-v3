@@ -55,7 +55,7 @@ const NextUICard: React.FC<NextUICardProps> = ({ title, date, description, image
                             className='text-white bg-[#e54971] '
                             onClick={() => window.open(url, "_blank")}
                         >
-                            Visit
+                            View
                         </Button>
 
                         <Button
