@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { spaceMono, averageSans } from '../styles/fonts';
 import Image from 'next/image';
 import { Button } from '@nextui-org/button';
+import { EnvelopeIcon, DocumentTextIcon } from '@heroicons/react/24/outline';
 
 const HeroSection = () => {
     return (
@@ -36,13 +37,20 @@ const HeroSection = () => {
                         Driven by creativity, innovation and a desire to foster community among the minority groups in the tech industry.</p>
                     <div id='buttons-container' className='flex flex-col md:flex-row  gap-4'>
                         <Button
-                            radius='full' size='lg' className='text-white bg-[#e54971] '
+                            startContent={<EnvelopeIcon className='w-6 h-6' />}
+                            radius='full' 
+                            size='lg' 
+                            className='text-white bg-[#e54971] '
                             onClick={() => window.open("mailto:saadia.shahid@torontomu.ca?subject=Hello Saadia&body=Hi...", "_blank")}
                         >
                             Say Hello
                         </Button>
                         <Button
-                            radius='full' variant='bordered' size='lg' className='text-[#e54971] border-4 border-[#e54971] hover:bg-white '
+                            // startContent={<DocumentTextIcon className='w-6 h-6' />}
+                            radius='full'
+                            variant='bordered'
+                            size='lg'
+                            className='text-[#e54971] border-4 border-[#e54971] hover:bg-white '
                             onClick={() => window.open("/files/Saadia_Shahid_Resume.pdf", "_blank")}
                         >
                             View Resume
