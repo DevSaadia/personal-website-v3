@@ -17,14 +17,14 @@ const HeroSection = () => {
             '>
             <div className='flex flex-col-reverse  md:flex-row items-center justify-center md:justify-between gap-8 md:gap-4 lg:gap-10 xl:gap-16  m-8 md:m-24 2xl:m-56 w-full '>
                 <div id='hero-content' className='md:flex-1 md:w-11/12 w-full'>
-                    <p className='hidden xs:block sm:hidden'>extra small</p>
+                    {/* <p className='hidden xs:block sm:hidden'>extra small</p>
                     <p className='block md:hidden'>small</p>
                     <p className='hidden md:block lg:hidden'>medium</p>
                     <p className='hidden lg:block xl:hidden'>large</p>
                     <p className='hidden xl:block 2xl:hidden'>xl</p>
-                    <p className='hidden 2xl:block'>2xl</p>
+                    <p className='hidden 2xl:block'>2xl</p> */}
                     <h1
-                        className={`mb-7 md:pt-2 text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold whitespace-nowrap text-transparent w-full bg-clip-text   bg-gradient-to-r from-[#e54971] to-[#e2a812] ${spaceMono.className} `}>&gt;
+                        className={`mb-7 md:pt-2 text-3xl  md:text-4xl lg:text-5xl xl:text-6xl font-extrabold whitespace-nowrap text-transparent w-full bg-clip-text   bg-gradient-to-r from-[#e54971] to-[#e2a812] ${spaceMono.className} `}>&gt;
                         <TypeAnimation
                             className='ml-6 '
                             sequence={["whoissaadia", 1000, "pwd", 1000, "ls", 1000, "echo \"hey\"", 1000]}
@@ -87,8 +87,8 @@ const HeroSection = () => {
 
                     </div>
                 </div>
-                <div id='hero-image' className='md:flex-1 flex justify-center md:justify-end '>
-                    <div className=' relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] '>
+                <div id='hero-image' className='md:flex-1 w-full h-full flex justify-center md:justify-end '>
+                    <div className=' relative w-full h-[300px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] '>
                         <Image
                             className='object-cover object-top rounded-2xl shadow-md w-full h-full'
                             src="/images/me.jpg"
