@@ -17,13 +17,14 @@ const HeroSection = () => {
             '>
             <div className='flex flex-col-reverse  md:flex-row items-center justify-center md:justify-between gap-8 md:gap-4 lg:gap-10 xl:gap-16  m-8 md:m-24 2xl:m-56 w-full '>
                 <div id='hero-content' className='md:flex-1 md:w-11/12 w-full'>
-                    {/* <p className='block md:hidden'>small</p>
+                    {/* <p className='hidden xs:block sm:hidden'>extra small</p>
+                    <p className='block md:hidden'>small</p>
                     <p className='hidden md:block lg:hidden'>medium</p>
                     <p className='hidden lg:block xl:hidden'>large</p>
                     <p className='hidden xl:block 2xl:hidden'>xl</p>
                     <p className='hidden 2xl:block'>2xl</p> */}
                     <h1
-                        className={`mb-7 md:pt-2 text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold whitespace-nowrap text-transparent w-full bg-clip-text   bg-gradient-to-r from-[#e54971] to-[#e2a812] ${spaceMono.className} `}>&gt;
+                        className={`mb-7 md:pt-2 text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold whitespace-nowrap text-transparent w-full bg-clip-text   bg-gradient-to-r from-[#e54971] to-[#e2a812] ${spaceMono.className} `}>&gt;
                         <TypeAnimation
                             className='ml-6 '
                             sequence={["whoissaadia", 1000, "pwd", 1000, "ls", 1000, "echo \"hey\"", 1000]}
