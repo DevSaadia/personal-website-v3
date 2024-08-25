@@ -10,6 +10,8 @@ const Footer = () => {
                 justify-center
                 py-2
                 font-semibold
+                sm:text-xs
+                md:text-base
                 text-[#e54971] 
                 ${jetBrainsMono.className}
                 `}
