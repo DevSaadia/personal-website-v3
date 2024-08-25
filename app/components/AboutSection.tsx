@@ -2,6 +2,8 @@ import React from 'react'
 import { averageSans, spaceMono } from '../styles/fonts'
 import Link from 'next/link';
 import skills from '../data/skills.json';
+import { Tooltip } from "@nextui-org/tooltip";
+import Image from 'next/image';
 
 const AboutSection = () => {
   return (
@@ -61,16 +63,36 @@ const AboutSection = () => {
             md:text-xl`}
           >
             My name is Saadia and I am a 4th year computer science student @{" "}
-            <Link
-              href='https://www.torontomu.ca/'
-              className='
+            <Tooltip
+              showArrow
+              content={
+                <Image
+                  className='rounded-md h-full'
+                  src="/images/university-website-preview.png" width={200} height={100} alt='image'
+                />
+              }
+              placement='top'
+              classNames={{
+                base: [
+                  // arrow color
+                  "before:bg-white dark:before:bg-white",
+                ],
+                content: [
+                  "py-2 px-2 shadow-xl",
+                  "bg-white",
+                ],
+              }}
+            >
+              <Link
+                href='https://www.torontomu.ca/'
+                className='
               text-[#ffe196] 
               hover:underline'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>Toronto Metropolitan University</strong>
-            </Link>
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>Toronto Metropolitan University</strong>
+              </Link></Tooltip>
             . I am an aspiring fullstack software developer, and am interested in learning more about Cloud Computation, Machine Learning, and Natural Language Processing. <br />
             Lately, I have been working with JavaScript frameworks and technologies such as NextJS, React, Tailwind CSS, and TypeScript.
           </p>
@@ -123,14 +145,35 @@ const AboutSection = () => {
             `}
           >
             I am also a{" "}
-            <Link
-              href='https://www.saadiashahid.ca/'
-              className='text-[#ffe196] hover:underline'
-              target="_blank"
-              rel="noopener noreferrer"
+            <Tooltip
+              showArrow
+              content={
+                <Image
+                  className='rounded-md h-full'
+                  src="/images/photography-website-preview.png" width={200} height={100} alt='image'
+                />
+              }
+              placement='top'
+              classNames={{
+                base: [
+                  // arrow color
+                  "before:bg-white dark:before:bg-white",
+                ],
+                content: [
+                  "py-2 px-2 shadow-xl",
+                  "bg-white",
+                ],
+              }}
             >
-              <strong>freelance photographer</strong>
-            </Link >
+              <Link
+                href='https://www.saadiashahid.ca/'
+                className='text-[#ffe196] hover:underline'
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>freelance photographer</strong>
+              </Link >
+            </Tooltip>
             {" "}and enjoy shooting weddings and portraits. In my spare time, you can find me learning a new hobby or digital painting.</p>
         </div>
       </div >

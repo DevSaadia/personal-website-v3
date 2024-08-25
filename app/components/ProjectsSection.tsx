@@ -1,9 +1,8 @@
 import React from 'react'
 import { spaceMono } from '../styles/fonts'
 import projects from '../data/projects.json'
-import ProjectCard from './ProjectCard'
-import ChakraCard from './ChakraCard'
 import NextUICard from './NextUICard'
+
 
 const ProjectsSection = () => {
   return (
