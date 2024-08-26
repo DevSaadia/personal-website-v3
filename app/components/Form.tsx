@@ -7,25 +7,34 @@ import emailjs from '@emailjs/browser';
 
 const Form = () => {
     const form = useRef<HTMLFormElement | null>(null);
+    const [emptyFieldsError, setEmptyFieldsError] = useState(false);
 
     const handleSubmit = (e: any) => {
         e.preventDefault();
-        console.log({ name, email, message });
-        emailjs
-            .sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "", form.current || '', {
-                publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
-            })
-            .then(
-                () => {
-                    console.log('SUCCESS!');
-                },
-                (error: { text: any; }) => {
-                    console.log('FAILED...', error.text);
-                },
-            );
-        setName('');
-        setEmail('');
-        setMessage('');
+
+        if (!name || !email || !message) {
+            setEmptyFieldsError(true);
+            return;
+        }
+        else {
+            console.log({ name, email, message });
+            emailjs
+                .sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "", form.current || '', {
+                    publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+                })
+                .then(
+                    () => {
+                        console.log('SUCCESS!');
+                    },
+                    (error: { text: any; }) => {
+                        console.log('FAILED...', error.text);
+                    },
+                );
+            setName('');
+            setEmail('');
+            setMessage('');
+        }
+        setEmptyFieldsError(false);
     };
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -71,6 +80,7 @@ const Form = () => {
                 label="Message"
                 classNames={{ inputWrapper: ["bg-white"] }}
             />
+            {emptyFieldsError && <p className='text-white text-sm'><span className='text-[#e2a812] '>*</span>{" "}all form fields must be filled out for form submission</p>}
             <Button
                 value="Send"
                 type='submit'
