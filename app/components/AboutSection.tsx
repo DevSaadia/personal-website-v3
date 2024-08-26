@@ -29,8 +29,7 @@ const AboutSection = () => {
           xl:text-6xl 
           font-extrabold 
           text-transparent 
-          md:w-1/4 
-          w-auto
+          w-fit
           inline-block 
           bg-clip-text  
           bg-gradient-to-r 
@@ -38,8 +37,7 @@ const AboutSection = () => {
           to-[#e2a812] 
           ${spaceMono.className}`}>
           &gt;
-          about
-        </h1>
+          about</h1>
         <div
           id="about-body"
           className='

@@ -1,0 +1,15 @@
+[
+    {
+        "icon":"LinkedInIcon",
+        "url":"https://www.linkedin.com/in/saadia-shahid"
+    },
+    {
+        "icon":"GitHubIcon",
+        "url":"https://www.github.com/DevSaadia"
+    },
+    {
+        "icon":"Email",
+        "url":"mailto:saadia.shahid@torontomu.ca?subject=Hello Saadia&body=Hi..."
+    }
+
+]
