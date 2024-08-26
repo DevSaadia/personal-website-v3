@@ -73,7 +73,7 @@ const HeroSection = () => {
                         ${averageSans.className} 
                         text-xl 
                         lg:text-2xl 
-                        2xl:text-[32px]
+                      
                         mb-6 `}>
                         Driven by creativity, innovation and a desire to foster community among the minority groups in the tech industry.</p>
                     <div
