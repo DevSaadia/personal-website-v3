@@ -26,7 +26,6 @@ const ContactSection = () => {
       h-1/4
     '>
             <div className='
-              border border-black
               w-full
       flex  
       gap-8 
@@ -37,7 +36,6 @@ const ContactSection = () => {
       flex-col'>
                 <h1
                     className={`mb-7 
-                        border border-black 
                         whitespace-nowrap
                         text-4xl 
                         md:text-4xl 
@@ -67,10 +65,9 @@ const ContactSection = () => {
                         md:flex-row
                         justify-between
                         gap-4 
-                        border border-black
                         w-full`}
                 >
-                    <div id='contact-info' className={` ${averageSans.className}  border border-black text-white sm:w-full md:w-1/2 lg:w-1/3`}>
+                    <div id='contact-info' className={` ${averageSans.className}  text-white sm:w-full md:w-1/2 lg:w-1/3`}>
                         <p>Connect with me or shoot me a message!<br />I&apos;ll get back to you soon as I can.</p>
                         <div id='social-icons' className='py-4 gap-6  flex'>
                             {socials.map((social: any, index: React.Key | null | undefined) => (

@@ -33,7 +33,7 @@ const Form = () => {
     return (
         <form
             ref={form}
-            className='gap-2 flex flex-col border border-black'
+            className='gap-2 flex flex-col'
             onSubmit={handleSubmit}
 
         >
@@ -46,7 +46,7 @@ const Form = () => {
                     onChange={(e) => setName(e.target.value)}
                     type="text"
                     label="Name"
-                    classNames={{ label: "text-slate-200", inputWrapper: ["bg-white"] }}
+                    classNames={{ inputWrapper: ["bg-white"] }}
                 />
                 <Input
                     radius='lg'
@@ -56,6 +56,7 @@ const Form = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     label="Email"
+                    classNames={{ inputWrapper: ["bg-white"] }}
                 />
             </div>
             {/* textarea */}
@@ -68,6 +69,7 @@ const Form = () => {
                 radius='full'
                 isRequired
                 label="Message"
+                classNames={{ inputWrapper: ["bg-white"] }}
             />
             <Button
                 value="Send"
