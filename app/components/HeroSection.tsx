@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { spaceMono, averageSans } from '../styles/fonts';
 import Image from 'next/image';
 import { Button } from '@nextui-org/button';
-import { EnvelopeIcon, DocumentTextIcon } from '@heroicons/react/24/outline';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 const HeroSection = () => {
     return (
@@ -78,9 +78,9 @@ const HeroSection = () => {
                         Driven by creativity, innovation and a desire to foster community among the minority groups in the tech industry.</p>
                     <div
                         id='buttons-container'
-                        className='flex flex-col md:flex-row  gap-4'>
+                        className={`flex flex-col md:flex-row  gap-4 ${averageSans.className}`}>
                         <Button
-                            startContent={<EnvelopeIcon className='w-6 h-6' />}
+                            startContent={<EmailOutlinedIcon className='w-6 h-6' />}
                             radius='full'
                             size='lg'
                             className='text-white bg-[#e54971] '
