@@ -67,7 +67,7 @@ const ContactSection = () => {
                         gap-4 
                         w-full`}
                 >
-                    <div id='contact-info' className={` ${averageSans.className}  text-white sm:w-full md:w-1/2 lg:w-1/3`}>
+                    <div id='contact-info' className={` ${averageSans.className} border border-black text-white sm:w-full md:w-1/2 lg:w-max md:text-sm lg:text-lg`}>
                         <p>Connect with me or shoot me a message!<br />I&apos;ll get back to you soon as I can.</p>
                         <div id='social-icons' className='py-4 gap-6  flex'>
                             {socials.map((social: any, index: React.Key | null | undefined) => (
