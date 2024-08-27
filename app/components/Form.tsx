@@ -78,7 +78,7 @@ const Form = () => {
                 radius='full'
                 isRequired
                 label="Message"
-                classNames={{ inputWrapper: ["bg-white"] }}
+                classNames={{ inputWrapper: ["bg-white px-[12px]"] }}
             />
             {emptyFieldsError && <p className='text-white text-sm'><span className='text-[#e2a812] '>*</span>{" "}all form fields must be filled out for form submission</p>}
             <Button
